@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.8;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: top-center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.content {
+    font-weight: bold;
+}
+
+header {
+    background-color: #0a0a0a;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff0000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+button {
+    background-color: transparent;
+    color: #d30707;
+    border: 2px solid #ba0303;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #720000;
+}
+
+.content-box {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff0000;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);    
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #555;
+    font-size: 15px;
+    border-top:  1px solid #333;
+}
+
+.email {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #ce0704;
+    font-weight: bold;
+}
+
+.hero {
+    padding-bottom: 120px;
+}
